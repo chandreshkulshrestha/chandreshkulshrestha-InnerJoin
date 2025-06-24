@@ -108,6 +108,11 @@ public class InnerJoinActivity {
         }
 
         return results;
+    }
+        public static void main(String[] args) {
+        InnerJoinActivity activity = new InnerJoinActivity();
+        Set<Pair<Integer, String>> result = activity.problem1();
+        result.forEach(pair -> System.out.println(pair.getFirst() + " - " + pair.getSecond()));
 
     }
 }
